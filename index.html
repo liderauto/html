@@ -20,6 +20,21 @@
     .contact-form textarea {
       margin-bottom: 10px;
     }
+
+    .map-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+      height: 0;
+      overflow: hidden;
+    }
+
+    .map-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   </style>
 </head>
 <body class="bg-dark text-white">
@@ -106,6 +121,34 @@
       </div>
     </div>
   </section>
+
+  <footer class="py-4 mt-4">
+    <div class="container bg-dark text-white">
+      <div class="row">
+        <!-- Google Map -->
+        <div class="col-md-6">
+          <h4>Encuéntranos</h4>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.876051958684!2d-1.6547189218185892!3d42.83323197115289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5093665db650c9%3A0x96bcf0ade48ee6e3!2sLiderauto%20Pamplona.!5e0!3m2!1sen!2ses!4v1732026614883!5m2!1sen!2ses"
+              frameborder="0"
+              style="border:0;"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0">
+            </iframe>
+          </div>
+        </div>
+        <!-- Address and Contact Info -->
+        <div class="col-md-6">
+          <h4>Contacto</h4>
+          <p class="pt-4 pb-0 mb-0"><strong>Dirección:</strong> Ctra. Artica, 24 y 26, 31013 Pamplona</p>
+          <p class="pt-0 mt-2"><strong>Teléfono:</strong> +34 848 88 80 93</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
