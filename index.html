@@ -1,155 +1,493 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LiderAuto - Servicios</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .hero-section {
-      background: url('images/header.jpg') no-repeat center center/cover;
-      height: 300px;
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="profile" href="https://gmpg.org/xfn/11">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    .services-section img {
-      width: 100%;
-      height: auto;
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="MobileOptimized" content="320">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-touch-fullscreen" content="yes">
 
-    .contact-form input,
-    .contact-form textarea {
-      margin-bottom: 10px;
-    }
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-statla-bar-style" content="black-translucent">
+  <meta name="google-site-verification" content="R8zJ1ZDiMreIOKK97VG-0c0UgZnR_73o6Av8Ie8axX8">
 
-    .map-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-      height: 0;
-      overflow: hidden;
-    }
+  <meta name="description" content="desc" />
+  <title>LiderAuto</title>
 
-    .map-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
-<body class="bg-dark text-white">
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">LiderAuto</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link text-white" href="#">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Segunda Mano</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Contacto</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Nosotros</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<body>
+  <!-- Start [ header ] -->
+  <header class="site-header la-header" id="site-header">
+    <div class="la-header-inner">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="la-header-row">
+              <div class="la-header-left">
+                <a href="/" class="la-logo ratio" aria-label="LiderAuto">
+                  <img src="assets/images/logo.png" alt="liderAuto">
+                </a>
+                <div class="nav-toggle-btn-wrap">
+                  <button class="nav-toggle-btn" aria-label="toggle">
+                    <span class="visually-hidden">Toggle navigation</span>
+                    <span class="navtoggle-bars">
+                      <span class="top bar left"></span>
+                      <span class="top bar right"></span>
+                      <span class="middle bar"></span>
+                      <span class="bottom bar left"></span>
+                      <span class="bottom bar right"></span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div class="la-header-right">
+                <div class="la-header-b">
+                  <nav class="la-header-nav" aria-label="Site Menu">
+                    <ul class="la-header-nav-list">
+                      <li>
+                        <a href="#start" class="la-header-link with-border js-scrollto" role="button">
+                          <span class="la-header-link-text">INICIO</span>
+                        </a>
+                      </li>
 
-  <!-- Hero Section -->
-  <div class="hero-section"></div>
+                      <li>
+                        <a href="#services" class="la-header-link with-border js-scrollto" role="button">
+                          <span class="la-header-link-text">SERVICIOS</span>
+                        </a>
+                      </li>
 
-  <!-- Servicios -->
-  <section class="services-section py-5">
-    <div class="container">
-      <h1 class="text-left mb-4">Servicios</h1>
-      <div class="row g-4">
-        <div class="col-md-3">
-          <div class="card h-100 bg-dark text-white">
-            <img src="images/servicios-1.jpg" class="card-img-top" alt="Reparación de Parabrisas">
-            <div class="card-body">
-              <h4 class="card-title">Reparación de Parabrisas</h4>
-              <p class="card-text">Servicio especializado de reparación y sustitución de parabrisas, asegurando que tu vehículo esté en las mejores condiciones para garantizar tu seguridad en la carretera.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card h-100 bg-dark text-white">
-            <img src="images/servicios-2.jpg" class="card-img-top" alt="Revisión y cambio de Frenos">
-            <div class="card-body">
-              <h4 class="card-title">Revisión y cambio de Frenos</h4>
-              <p class="card-text">Incluye la revisión, mantenimiento y sustitución de discos, pastillas y líquidos para asegurar que el sistema funcione de manera óptima y mantener la seguridad del vehículo en todo momento.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card h-100 bg-dark text-white">
-            <img src="images/servicios-3.jpg" class="card-img-top" alt="Cambio de Neumáticos">
-            <div class="card-body">
-              <h4 class="card-title">Cambio de Neumáticos</h4>
-              <p class="card-text">Ofrecen revisiones de desgaste, reparaciones de pinchazos y cambio de neumáticos con alineación y balanceo, garantizando la máxima seguridad en la carretera.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card h-100 bg-dark text-white">
-            <img src="images/servicios-4.jpg" class="card-img-top" alt="Mantenimiento del Vehículo">
-            <div class="card-body">
-              <h4 class="card-title">Mantenimiento del Vehículo</h4>
-              <p class="card-text">Este servicio incluye revisiones periódicas del coche para asegurar que todos los componentes estén en buen estado. Se realiza cambio de aceite, filtros, revisión de frenos, neumáticos y niveles de líquidos.</p>
+                      <li>
+                        <a href="#chance" class="la-header-link with-border js-scrollto" role="button">
+                          <span class="la-header-link-text">OCASIÓN</span>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#contact" class="la-header-link with-border js-scrollto" role="button">
+                          <span class="la-header-link-text">CONTACTO</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </header>
+  <!-- End   [ header ] -->
+  <span class="la-backdrop fade"></span>
 
-  <!-- Segunda Mano -->
-  <section class="second-hand-section py-5 bg-dark text-white">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6 text-center text-md-start">
-          <h2>SEGUNDA MANO</h2>
-          <p>Descubre nuestra oferta de coches de segunda mano completamente revisados y verificados por nuestros expertos en Coches.net.</p>
-          <a href="https://www.coches.net/concesionario/liderautonavarra/" class="btn btn-light fw-bold px-5" target="_blank">Coches.net</a>
-        </div>
-        <div class="col-md-6">
-          <img src="images/segunda-mano.jpg" class="img-fluid rounded" alt="Coches de Segunda Mano">
+  <main class="layout" id="site-content">
+
+    <!-- Start [ div-a ]  -->
+    <div class="la-section la-div-a p-0">
+      <div class="la-div-inner">
+        <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/images/slider/slide-1.jpg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/slider/slide-2.jpg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/slider/slide-3.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </div>
-  </section>
+    <!-- End [div-a ] -->
 
-  <footer class="py-4 mt-4">
-    <div class="container bg-dark text-white">
-      <div class="row">
-        <!-- Google Map -->
-        <div class="col-md-6">
-          <h4>Encuéntranos</h4>
-          <div class="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.876051958684!2d-1.6547189218185892!3d42.83323197115289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5093665db650c9%3A0x96bcf0ade48ee6e3!2sLiderauto%20Pamplona.!5e0!3m2!1sen!2ses!4v1732026614883!5m2!1sen!2ses"
-              frameborder="0"
-              style="border:0;"
-              allowfullscreen=""
-              aria-hidden="false"
-              tabindex="0">
-            </iframe>
+    <!-- Start [ div-b ]  -->
+    <div class="la-section la-div-b" id="start">
+      <div class="la-div-inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="la-div-b-wrap">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="la-text-a">
+                      <h1 class="h1">¿QUIÉNES SOMOS?</h1>
+                      <div class="la-text-desc p1">
+                        <p>En Liderauto, llevamos años dedicándonos al cuidado y mantenimiento de tu vehículo,
+                          ofreciendo un <b>servicio de confianza, calidad y transpariencia.</b> Somos un equipo de
+                          profesionales apasionados por la mecánica, comprometidos en garantizar tu seguridad en la
+                          carretera y mantener tu coche en perfectas condiciones.</p>
+                        <p>Nuestro taller combina <b>experiencia, tecnología de vanguardia y un trato cercano</b>,
+                          porque sabemos que cada cliente y cada vehículo son únicos.¡Bienvenido a tu taller de
+                          confianza!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- Address and Contact Info -->
-        <div class="col-md-6">
-          <h4>Contacto</h4>
-          <p class="pt-4 pb-0 mb-0"><strong>Dirección:</strong> Ctra. Artica, 24 y 26, 31013 Pamplona</p>
-          <p class="pt-0 mt-2"><strong>Teléfono:</strong> +34 848 88 80 93</p>
-        </div>
-
       </div>
     </div>
-  </footer>
+    <!-- End [div-b ] -->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Start [ div-c ]  -->
+    <div class="la-section la-div-c" id="services">
+      <div class="la-div-inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="la-div-c-wrap">
+                <h2 class="h1">SERVICIOS</h2>
+                <div class="row la-div-c-row">
+                  <div class="col-12 col-lg-4">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="la-text-a">
+                          <div class="la-div-c-items-number">
+                            <span class="la-div-c-items-number-span">01</span>
+                            <span class="la-div-c-items-number-border"></span>
+                          </div>
+                          <div class="la-div-c-items">
+                            <span class="la-div-c-items-lbl">Diagnosis avanzada</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="la-text-a">
+                          <div class="la-div-c-items-number">
+                            <span class="la-div-c-items-number-span">02</span>
+                            <span class="la-div-c-items-number-border"></span>
+                          </div>
+                          <div class="la-div-c-items">
+                            <span class="la-div-c-items-lbl">Cambios</span>
+                            <ul>
+                              <li>
+                                <a href="#" class="with-border">
+                                  <span>&gt; Neumáticos</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="with-border">
+                                  <span>&gt; Frenos</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="with-border">
+                                  <span>&gt; Baterías</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="la-text-a">
+                          <div class="la-div-c-items-number">
+                            <span class="la-div-c-items-number-span">03</span>
+                            <span class="la-div-c-items-number-border"></span>
+                          </div>
+                          <div class="la-div-c-items">
+                            <span class="la-div-c-items-lbl">Reparaciones</span>
+                            <ul>
+                              <li>
+                                <a href="#" class="with-border">
+                                  <span>&gt; Suspensión</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="with-border">
+                                  <span>&gt; Sistemas eléctricos</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="with-border">
+                                  <span>&gt; Escapes</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="with-border">
+                                  <span>&gt; Cajas de cambios</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="la-text-a">
+                          <div class="la-div-c-items-number">
+                            <span class="la-div-c-items-number-span">04</span>
+                            <span class="la-div-c-items-number-border"></span>
+                          </div>
+                          <div class="la-div-c-items">
+                            <span class="la-div-c-items-lbl">Revisiones periódicas</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="la-text-a">
+                          <div class="la-div-c-items-number">
+                            <span class="la-div-c-items-number-span">05</span>
+                            <span class="la-div-c-items-number-border"></span>
+                          </div>
+                          <div class="la-div-c-items">
+                            <span class="la-div-c-items-lbl">Carga y mantenimiento de aire acondicionado</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="la-text-a">
+                          <div class="la-div-c-items-number">
+                            <span class="la-div-c-items-number-span">06</span>
+                            <span class="la-div-c-items-number-border"></span>
+                          </div>
+                          <div class="la-div-c-items">
+                            <span class="la-div-c-items-lbl">Coche de sustitución</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="la-text-a">
+                          <div class="la-div-c-items-number">
+                            <span class="la-div-c-items-number-span">07</span>
+                            <span class="la-div-c-items-number-border"></span>
+                          </div>
+                          <div class="la-div-c-items">
+                            <span class="la-div-c-items-lbl">Servicios</span>
+                            <ul>
+                              <li>
+                                <a href="#" class="with-border">
+                                  <span>&gt; Pre-ITV</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="with-border">
+                                  <span>&gt; Pasamos tu ITV</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="with-border">
+                                  <span>&gt; Carrocería</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="la-text-a">
+                          <div class="la-div-c-items-number">
+                            <span class="la-div-c-items-number-span">08</span>
+                            <span class="la-div-c-items-number-border"></span>
+                          </div>
+                          <div class="la-div-c-items">
+                            <span class="la-div-c-items-lbl">Diagnóstico y reparación de motores</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="la-text-a">
+                          <div class="la-div-c-items-number">
+                            <span class="la-div-c-items-number-span">09</span>
+                            <span class="la-div-c-items-number-border"></span>
+                          </div>
+                          <div class="la-div-c-items">
+                            <span class="la-div-c-items-lbl">Instalación de accesorios</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="la-text-a">
+                          <div class="la-div-c-items-number">
+                            <span class="la-div-c-items-number-span">10</span>
+                            <span class="la-div-c-items-number-border"></span>
+                          </div>
+                          <div class="la-div-c-items">
+                            <span class="la-div-c-items-lbl">Sistemas de dirección</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="la-text-a">
+                          <div class="la-div-c-items-number">
+                            <span class="la-div-c-items-number-span">11</span>
+                            <span class="la-div-c-items-number-border"></span>
+                          </div>
+                          <div class="la-div-c-items">
+                            <span class="la-div-c-items-lbl">Limpieza y reparación de vehículos.</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End [div-c ] -->
+
+    <!-- Start [ div-d ]  -->
+    <div class="la-section la-div-d" id="chance">
+      <div class="la-div-inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="la-div-d-wrap">
+                <div class="row align-items-center">
+                  <div class="col-12 col-lg-8">
+                    <div class="la-text-a">
+                      <h2 class="h1">VENTA DE COCHES<br> DE OCASIÓN</h2>
+                      <div class="la-text-desc p1">
+                        <p>Accede a nuestro catálogo completo en
+                          <a href="#">coches.net</a> y encuentra el vehículo que
+                          mejor se adapta a ti. ¡Garantía y confianza,
+                          siempre a tu alcance!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    <div class="btn-spacer mt-5 mt-lg-0 justify-content-lg-center justify-content-xxl-start">
+                      <a href="#" class="btn btn-primary">
+                        <span class="btn-text">ACCEDE</span>
+                        <i class="la-icon-chevron-right" aria-hidden="true"><svg focusable="false" tabindex="-1">
+                            <use xlink:href="#la-icon-chevron-right"></use>
+                          </svg></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End [div-d ] -->
+
+    <!-- Start [ div-e ]  -->
+    <div class="la-section la-div-e" id="contact">
+      <div class="la-div-inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="la-div-e-wrap">
+                <div class="row align-items-center">
+                  <div class="col-12 col-lg-6 col-xxl-4">
+                    <div class="la-text-a">
+                      <h2 class="h1">CONTACTO</h2>
+                      <div class="la-text-desc p1">
+                        <div class="la-div-e-contacts">
+                          <span class="la-div-e-contacts-icon">
+                            <i class="la-icon-telephone" aria-hidden="true"><svg focusable="false" tabindex="-1">
+                                <use xlink:href="#la-icon-telephone"></use>
+                              </svg></i>
+                          </span>
+                          <div class="la-div-e-contacts-numbers">
+                            <a href="tel:948382713" class="with-border">
+                              <span>
+                                948 382 713
+                              </span>
+                            </a>
+                            <a href="tel:605684515" class="with-border">
+                              <span>
+                                605 684 515
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="la-div-e-contacts">
+                          <span class="la-div-e-contacts-icon">
+                            <i class="la-icon-email" aria-hidden="true"><svg focusable="false" tabindex="-1">
+                                <use xlink:href="#la-icon-email"></use>
+                              </svg></i>
+                          </span>
+                          <div class="la-div-e-contacts-numbers">
+                            <a href="mailto:info@liderautopamplona.com" class="with-border">
+                              <span>
+                                info@liderautopamplona.com
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="la-div-e-contacts">
+                          <span class="la-div-e-contacts-icon">
+                            <i class="la-icon-location" aria-hidden="true"><svg focusable="false" tabindex="-1">
+                                <use xlink:href="#la-icon-location"></use>
+                              </svg></i>
+                          </span>
+                          <div class="la-div-e-contacts-numbers">
+                            <address>
+                              <i>Encuéntranos en</i><br>
+                              Ctra. Artica, 24 y 26,<br>
+                              31013 Artica, Navarra<br>
+                            </address>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 col-xxl-8 mt-5 mt-lg-0">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.8758657155918!2d-1.6547189234782949!3d42.83323590507595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5093665db650c9%3A0x96bcf0ade48ee6e3!2sLiderauto%20Pamplona.!5e0!3m2!1sen!2sin!4v1737364061774!5m2!1sen!2sin"
+                      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                      title="location"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End [div-e ] -->
+
+  </main>
+
+  <div id="icon_vgfx"></div>
+
+  <script src="assets/js/jquery-2.2.4.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>
