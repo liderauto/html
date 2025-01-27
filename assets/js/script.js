@@ -16,7 +16,7 @@ jQuery(document).ready(function ($) {
   _layout = jQuery('.layout');
 
   // default script
-  // jQuery('#icon_vgfx').load(THEME_URL+'assets/images/vgfx.svg');
+  jQuery('#icon_vgfx').load(THEME_URL + 'assets/images/vgfx.svg');
 
   // for handle mobile nav
   jQuery('.nav-toggle-btn').on('click', function (e) {
