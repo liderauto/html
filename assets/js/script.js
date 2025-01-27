@@ -26,13 +26,15 @@ jQuery(document).ready(function ($) {
 
   jQuery('.la-backdrop').on('click', function (e) {
     e.preventDefault();
-    _html.removeClass('nav-expanded');
+    setTimeout(function () {
+      _html.removeClass('nav-expanded');
+    }, 0.5 * 1000);
   });
 
   // header menu add and removeclass
   if (jQuery(window).width() <= 991) {
     jQuery('.la-header-link').on('mouseenter', function () {
-      if (!navToggleBtnWrap.is(":visible")) {
+      if (navToggleBtnWrap && !navToggleBtnWrap.is(":visible")) {
         var ele = jQuery(this);
         jQuery('.la-header-nav-list > li').removeClass('active');
         ele.parent().addClass('active');
@@ -40,10 +42,15 @@ jQuery(document).ready(function ($) {
     });
 
     jQuery('.la-header-nav-list > li').on('mouseleave', function () {
-      if (!navToggleBtnWrap.is(":visible")) {
+      if (navToggleBtnWrap && !navToggleBtnWrap.is(":visible")) {
         jQuery('.la-header-nav-list > li').removeClass('active');
       }
     });
+
+    jQuery('.la-header-nav-list > li > a').on('click', function (e) {
+      _html.removeClass('nav-expanded');
+    });
+
   }
 
 
