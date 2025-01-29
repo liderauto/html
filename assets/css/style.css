@@ -1271,6 +1271,10 @@ html.nav-expanded .nav-toggle-btn,
   border: 0;
 }
 
+.carousel {
+  margin-top: 8rem;
+}
+
 @media (min-width: 992px) {
   .la-div-c-items {
     margin: 2rem 0 !important;
